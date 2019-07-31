@@ -1,0 +1,19 @@
+{
+  "name": "grace-monthly-sheet-scanner",
+  "version": "0.0.2",
+  "description": "excel scanner for Grace",
+  "main": "gs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "gs": "gs.js"
+  },
+  "author": "Daniel Liu",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.3.3",
+    "commander": "^2.20.0",
+    "xlsx": "^0.14.4"
+  }
+}
