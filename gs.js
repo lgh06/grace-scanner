@@ -13,7 +13,7 @@ const version = require( path.resolve( __dirname, 'package.json' ) ).version;
 
 program
   .version(version)
-  .option('-f, --file [file]', 'excel path,default is current path\'s test.xlsx', 'test.xlsx')
+  .option('-f, --file [file]', 'excel name,default is current path\'s test.xlsx', 'test.xlsx')
   .option('-s, --score [score]', '1 or 2', '1')
   .parse(process.argv);
 
