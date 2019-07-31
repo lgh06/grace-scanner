@@ -14,7 +14,7 @@ const version = require( path.resolve( __dirname, 'package.json' ) ).version;
 program
   .version(version)
   .option('-f, --file [file]', 'excel path,default is current path\'s test.xlsx', 'test.xlsx')
-  .option('-s, --score [score]', 'excel path,default is current path\'s test.xlsx', 'test.xlsx')
+  .option('-s, --score [score]', '1 or 2', '1')
   .parse(process.argv);
 
 if (!process.argv.slice(2).length) {
@@ -38,6 +38,9 @@ console.log(getScoreFromSheet(workbook));
 function getScoreFromSheet(workbook) {
   var first_sheet_name = workbook.SheetNames[0];
   var address_of_cell = 'E21';
+  if (program.score === '2') {
+    address_of_cell = 'G21'
+  }
 
   /* Get worksheet */
   var worksheet = workbook.Sheets[first_sheet_name];
