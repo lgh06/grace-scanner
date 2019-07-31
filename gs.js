@@ -29,9 +29,9 @@ function hint(txt) {
 const fs = require('fs');
 
 const filePath = path.resolve('./' + program.file);
-console.log(filePath);
+// console.log(filePath);
 
-// var workbook = XLSX.readFile(filePath);
+var workbook = XLSX.readFile(filePath);
 
 console.log(getScoreFromSheet(workbook));
 
