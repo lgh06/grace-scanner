@@ -19,6 +19,7 @@ program
 
 if (!process.argv.slice(2).length) {
   program.outputHelp(hint);
+  // return;
 }
 
 function hint(txt) {
@@ -32,7 +33,7 @@ console.log(filePath);
 
 var workbook = XLSX.readFile(filePath);
 
-console.log(getScoreFromSheet(workbook));
+// console.log(getScoreFromSheet(workbook));
 
 // read value from E21
 function getScoreFromSheet(workbook) {
