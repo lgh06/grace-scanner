@@ -1,10 +1,14 @@
 {
   "name": "grace-monthly-sheet-scanner",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "excel scanner for Grace",
   "main": "gs.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lgh06/grace-scanner"
   },
   "bin": {
     "gs": "gs.js"

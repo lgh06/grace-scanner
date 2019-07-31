@@ -6,7 +6,7 @@ for Windows, https://npm.taobao.org/mirrors/node/v10.16.0/node-v10.16.0-x64.msi
 # Install the tool
 To install the tool, type below line in your Terminal.app (or cmd in windows) then press Enter on keyboard :  
 `
-npm i -g grace-monthly-sheet-scanner@0.0.7 --registry=https://registry.npm.taobao.org  
+npm i -g grace-monthly-sheet-scanner@0.0.8 --registry=https://registry.npm.taobao.org  
 `  
 then you have the `gs` command in your terminal now.   
 
